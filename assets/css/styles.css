@@ -43,21 +43,38 @@ p {
 
 /*Section [Navigation]*/
 nav {
-  height: 100px;
-  max-width: 100%;
+  height: 80px;
+  max-width: 1088px;
   align-items: center;
   justify-content: center;
-  background-color: black;
+  background-color: white;
   display: flex;
   margin: 0 auto;
 }
 
 nav ul {
   display: flex;
-  gap: 20px;
+  gap: 45px;
   list-style: none;
-  margin: 0 auto;
+  margin-right: auto;
   align-items: center;
+}
+
+nav ul li:nth-child(1) {
+  margin-left: 70px;
+}
+
+nav ul li:nth-child(8) {
+  margin-left: 338px;
+}
+
+.fa-regular {
+  font-size: 2.5rem;
+}
+
+.fa-regular:hover {
+  color: rgb(83 141 215);
+  transition: all 250ms ease-in-out;
 }
 
 nav img {
@@ -67,19 +84,19 @@ nav img {
 }
 
 nav a {
-  font-size: 1.8rem;
-  font-weight: 600;
-  color: white;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: black;
   text-decoration: none;
 }
 
-.nav-links a:hover {
-  color: tomato;
-  transition: all 250ms ease-in-out;
+nav ul li a i {
+  font-size: 1.5rem;
 }
 
-nav i {
-  font-size: 3.5rem;
+.fa-font-awesome {
+  color: rgb(83 141 215);
+  font-size: 2.5rem;
 }
 
 .burgerMenuOpen,
@@ -99,31 +116,6 @@ nav i {
   color: white;
   background-color: tomato;
   cursor: pointer;
-}
-
-.signup-btn:hover {
-  background-color: rgb(224, 82, 57);
-  transition: all 250ms ease-in-out;
-}
-
-.nav-links a {
-  display: inline-block;
-  position: relative;
-}
-
-.nav-links a:not(.signup-btn)::after {
-  position: absolute;
-  content: "";
-  height: 2px;
-  width: 0;
-  display: block;
-  margin-top: 7px;
-  background-color: white;
-  transition: all 300ms ease-in-out;
-}
-
-.nav-links a:hover::after {
-  width: 100%;
 }
 
 /*Responsive burgermenu*/
@@ -178,6 +170,32 @@ nav i {
 }
 
 /*Section [Hero]*/
+.hero {
+  background-image: url(/assets/img/hero-icon-bg.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 100%;
+}
+
+.hero-container {
+  max-width: 1088px;
+  background-color: #f36944;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+}
+
+.hero-container p {
+  font-size: 1.6rem;
+  color: white;
+}
+
+.hero-container i {
+  font-size: 1.6rem;
+}
 
 /*Section [name]*/
 
